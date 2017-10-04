@@ -44,20 +44,18 @@ body{
 .page__main{
 	max-width:1050px;
 	margin:0 auto;
-	padding-left: 86px;
-	padding-right: 83px;
+	padding-left: 80px;
+	padding-right: 80px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
-section{
-	max-width:382px;
-}
+
 /*==========================================
     HEADER
     =====================================================*/	
-.logo-container1{
+.page__header{
 	margin-top:55px;
 	display: flex;
 	justify-content: center;
