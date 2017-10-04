@@ -1,6 +1,8 @@
 # weekly-webdev-challenge-1
-
- ## Czysty HTML/CSS/JS.
+## build in progress 
+ ## clean HTML/CSS/JS.
+ ## validation forms
+ ##
  ## Pixel perfect
  
 ![source jpg](/source/1.jpg)
