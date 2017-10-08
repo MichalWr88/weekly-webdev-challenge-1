@@ -14,33 +14,9 @@ body{
 	font-size:1.6rem;
 	color:white;
 	text-shadow: 0px 3px 2px grey;
-	max-width:1000px;
+	max-width:1200px;
 	margin:0 auto;
 	}
-
-
-
-/*==========================================
-    FORM
-    =====================================================*/
-
-.page__form{
-	max-width:380px;
-
-}
-.form__header{
-	font-size:3.2rem;
-}
-
-
-
-
-
-
-
-
-
-
 .page__main{
 	max-width:1050px;
 	margin:0 auto;
@@ -49,9 +25,8 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
-
 /*==========================================
     HEADER
     =====================================================*/	
@@ -63,7 +38,7 @@ body{
 	margin-bottom: 0;
 	opacity: 0.2;
 }
-.logo{
+.hader__logo{
 	transform: scale(1, 0.7);
 	margin-left: 20px;
 }	
@@ -71,26 +46,23 @@ body{
 
 
 /*==========================================
-    SECTION
-    =====================================================*/	
-.form-name{
-	text-transform: capitalize;
-	text-align: center;
-	margin-top: 24px;
-	margin-bottom: 44px;
-	font-size: 3.2em;
+    FORM
+    =====================================================*/
+.form__wrapper{
+	display:flex;
+	flex-direction:column;
+	width:380px;
+	margin:20px;
 }
-form{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding:20px;
-	border-radius: 3px;
+.form__content{
+	width:100%;
 	position: relative;
 	background-color: #f4f4f4;
-	
+	padding:20px;
+	border-radius: 3px;
+	box-sizing:border-box
 }
-form::before{
+.form__content::before{
 	content: "";
 	position: absolute;
 	top:-20px;
@@ -99,51 +71,73 @@ form::before{
 	right:-20px;
 	border-radius: 5px;
 	border:20px solid rgba(0,0,0,0.23);
-	
 	pointer-events: none
 }
 
-.text-input{
-	background-image: url("../img/message.png");
-	background-repeat: repeat;
-	background-size: 20px 20px;
-	font-size: 1.6rem;
-	height: 40px;
-	width: 100%;
-	padding-left:82px;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	border:1px solid #c6c6c6;	
+
+.form__header{
+	font-size:3.2rem;
+	text-transform: capitalize;
+	text-align: center;
+	margin-top: 24px;
+	margin-bottom: 44px;
+}
+.form__content{
+
+}
+.form__elem{
+font-size: 1.6rem;
+}
+
+.elem__label{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	box-sizing:border-box;
+	height:40px;
+	border:1px solid #c6c6c6;
+	border-radius: 3px;
+	width:100%;
+}
+.elem__icon{
+	display:block;
+margin:4px auto;
+background-size:23px auto;
+background-position: center;
+background-repeat: no-repeat;
+width:60px;
+box-sizing:border-box;
+border-right:2px solid #c6c6c6;
+opacity:0.2;
+}
+.elem__icon[data-bg='user']{
+	background-image: url('../img/user.png');
+}
+.elem__icon[data-bg='message']{
+	background-image: url('../img/message.png');
+
+}
+.elem__icon[data-bg='phone']{
+	background-image: url('../img/phone.png');
+}
+.elem__icon[data-bg='lock']{
+	background-image: url('../img/lock.png');
+	background-size:20px auto;
+}
+.elem__icon[data-bg='maps']{
+	background-image: url('../img/maps.png');
+}
+.elem__input{
+	width:100%;
+	border:none;
+	padding-left:25px;
 	background: rgba(248,248,248,1);
-background: -moz-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,1)), color-stop(100%, rgba(243,243,243,1)));
-background: -webkit-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
-background: -o-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
-background: -ms-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
-background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f3f3f3', GradientType=0 );
-}
-input[type='checkbox']  {
-
-}
-span{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    background-color: #fff;
-    border: 1px solid #c6c6c6;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 15px;
-    margin-left: 0;
+	background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
 }
 
-/*==========================================
-    button class
-    =====================================================*/	
-.confirm{
+
+	
+/*.confirm{
 	text-transform: capitalize;
 	color:white;
 	text-shadow: 1px 1px 0px #2e6c02;
@@ -159,10 +153,7 @@ background: -ms-linear-gradient(top, rgba(163,216,64,1) 0%, rgba(59,154,0,1) 100
 background: linear-gradient(to bottom, rgba(163,216,64,1) 0%, rgba(59,154,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3d840', endColorstr='#3b9a00', GradientType=0 );
 }
-.small-button{
-	width: 146px;
-	font-size: 1.8rem;
-}
+
 .negative{
 	text-transform: capitalize;
 	color:white;
@@ -187,24 +178,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76f7f', end
 	width: 100%;
 	font-size: 2.4rem;
 }
-label{
-	font-size: 1.73rem;
-	margin-bottom:18px;
-}
-
-
-/*==========================================
-    medium screen
-    =====================================================*/
-@media all and (max-width:640px) and (min-width:381px) {
-
-}
-/*==========================================
-    small screen
-    =====================================================*/
-
-@media all and (max-width:381px) and (min-width:200px) {
-
-}
-
 
