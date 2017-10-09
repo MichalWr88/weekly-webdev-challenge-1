@@ -1,3 +1,4 @@
 
 *.psd
 *.psb
+node_modules
