@@ -17,96 +17,69 @@
         <img class="header__logo" src="img/logo.png" alt="">
     </header>
     <main class="page__main">
-        <!-- REGRISTER FORM -->
-        <div class="form__wrapper">
-            <h2 class="form__header">register form</h2>
-            <form class="form__content">
-                <p class="form__elem">
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='user'></span>
-                        <input class="elem__input" type="text" placeholder="Username">
-                    </label>
-                </p>
-                <p class="form__elem">
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='lock'></span>
-                        <input class="elem__input" type="text" placeholder="Password">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='lock'></span>
-                        <input class="elem__input" type="text" placeholder="Confirm Password">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='message'></span>
-                        <input class="elem__input" type="email" placeholder="Email">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='maps'></span>
-                        <select class="elem__input elem__input--select" name="Location">
-                            <option value="default" disabled selected hidden">Your Location</option>
-                            <option value="Africa">Africa</option>
-                            <option value="Europe">Europe</option>
-                            <option value="Asia">Asia</option>
-                            <option value="North America">North America</option>
-                            <option value="South America">South America</option>
-                            <option value="Antarctica">Antarctica</option>
-                            <option value="Australia">Australia</option>
-                        </select>
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label elem__label--checkbox">
-                        <span>Ihave read and accept the terms of use.</span>
-                        <input class="elem__checkbox" id="terms-of-use" type="checkbox">
-                        <span class="checkbox__icon"></span>
-                    </label>
-                </p>
-                <p>
-                    <button class="elem__btn elem__btn--confirm elem__btn--fullWidth" type="submit">Sign up</button>
-                </p>
-            </form>
-        </div>
-        <!-- SIGN INFORM -->
-        <div class="form__wrapper">
-            <h2 class="form__header">sign in form</h2>
-            <form class="form__content" action="#">
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='user'></span>
-                        <input class="elem__input" type="text" placeholder="Username">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='lock'></span>
-                        <input class="elem__input" type="text" placeholder="text">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label elem__label--checkbox">
-                        <span class="checkbox__icon"></span><span></span>Remember me
-                        <input class="elem__checkbox" id="remember" type="checkbox">
-                    </label>
-                </p>
-                <p>
-                    <button class="elem__btn elem__btn--confirm">sign in</button>
-                </p>
-            </form>
-        </div>
-        <!-- SEND EMAIL -->
-        <div class="form__wrapper">
-            <h2 class="form__header">send email</h2>
-            
-                <form class="form__content" action="">
-                    <p>
+        <div class="page__column">
+            <!-- REGRISTER FORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header">register form</h2>
+                <form class="form__content">
+                    <p class="form__elem">
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='user'></span>
+                            <input class="elem__input" type="text" placeholder="Username">
+                        </label>
+                    </p>
+                    <p class="form__elem">
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="text" placeholder="Password">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="text" placeholder="Confirm Password">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Email">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='maps'></span>
+                            <select class="elem__input elem__input--select" name="Location">
+                                <option value="default" disabled selected hidden>Your Location</option>
+                                <option value="Africa ">Africa</option>
+                                <option value="Europe ">Europe</option>
+                                <option value="Asia ">Asia</option>
+                                <option value="North America ">North America</option>
+                                <option value="South America ">South America</option>
+                                <option value="Antarctica ">Antarctica</option>
+                                <option value="Australia ">Australia</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label elem__label--checkbox ">
+                            <span>Ihave read and accept the terms of use.</span>
+                            <input class="elem__checkbox " id="terms-of-use" type="checkbox">
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <button class="elem__btn elem__btn--confirm elem__btn--fullWidth" type="submit">Sign up</button>
+                    </p>
+                </form>
+            </div>
+            <!-- SEND EMAIL -->
+            <div class="form__wrapper ">
+                <h2 class="form__header ">send email</h2>
+                <form class="form__content " action="#">
+                    <p>
+                        <label class="elem__label ">
+                            <span class="elem__icon " data-bg='user'></span>
                             <input class="elem__input" type="text" placeholder="Your Name">
                         </label>
                     </p>
@@ -118,68 +91,93 @@
                     </p>
                     <p>
                         <label class="elem__label">
-                            <span class="elem__icon"></span>
-                            <textarea class="elem__input" name="message" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                            <textarea class="elem__input elem__input--textarea" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
                         </label>
                     </p>
                     <p>
-                        <label class="elem__label elem__label--checkbox">
+                        <label class="elem__label elem__label--checkbox ">
                             <span class="checkbox__icon"></span>Send copy to my Email
                             <input class="elem__checkbox" id="copy-email" type="checkbox" checked="checked">
                         </label>
                     </p>
                     <p>
-                        <button class="elem__btn elem__btn--confirm">send email</button>
+                        <button class="elem__btn elem__btn--confirm elem__btn--fullWidth">Send Email</button>
                     </p>
                 </form>
-            
+            </div>
         </div>
-        <!-- RECOVER FORM -->
-        <div class="form__wrapper">
-            <h2 class="form__header">recover form</h2>
-            <form class="form__content" action="#">
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='message'></span>
-                        <input class="elem__input" type="email" placeholder="Enter your Email">
-                    </label>
-                </p>
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='phone'></span>
-                        <input class="elem__input" type="tel" placeholder="enter your Phone number">
-                    </label>
-                </p>
-                <p>
-                    <button class="elem__btn">send</button>
-                    <button class="elem__btn" disabled>done</button>
-                </p>
-            </form>
-        </div>
-        <!-- SUBSCRIBE FORM -->
-        <div class="form__wrapper">
-            <h2 class="form__header">subscribe form</h2>
-            <form class="form__content" action="#">
-                <p>
-                    <label class="elem__label">
-                        <span class="elem__icon" data-bg='message'></span>
-                        <input class="elem__input" type="email" placeholder="Enter yout Email">
-                    </label>
-                </p>
-                <button class="elem__btn elem__btn--confirm">subscribe</button>
-                <button class="elem__btn">no, thanks</button>
-                </p>
-            </form>
+        <div class="page__column">
+            <!-- SIGN INFORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header ">sign in form</h2>
+                <form class="form__content" action="# ">
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='user'></span>
+                            <input class="elem__input" type="text" placeholder="Username">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="text" placeholder="text">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label elem__label--checkbox ">
+                            <span class="checkbox__icon"></span><span></span>Remember me
+                            <input class="elem__checkbox" id="remember" type="checkbox">
+                        </label>
+                    </p>
+                    <button class="elem__btn elem__btn--confirm">Sign in</button>
+                </form>
+            </div>
+            <!-- RECOVER FORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header">recover form</h2>
+                <form class="form__content" action="#">
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Enter your Email">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='phone'></span>
+                            <input class="elem__input" type="tel" placeholder="enter your Phone number">
+                        </label>
+                    </p>
+                    <p>
+                        <button class="elem__btn elem__btn--confirm ">send</button>
+                        <button class="elem__btn elem__btn--confirm " disabled>done</button>
+                    </p>
+                </form>
+            </div>
+            <!-- SUBSCRIBE FORM -->
+            <div class="form__wrapper ">
+                <h2 class="form__header ">subscribe form</h2>
+                <form class="form__content " action="# ">
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Enter yout Email">
+                        </label>
+                    </p>
+                    <button class="elem__btn elem__btn--confirm">subscribe</button>
+                    <button class="elem__btn elem__btn--negative">no, thanks</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer class="page__footer">
-        <img class="" src="img/logo2.png" alt="first logo">
-        <img class="logo" src="img/logo.png" alt="second logo">
-        <img class="logo" src="img/logo3.png" alt="third logo">
+        <img class=" " src="img/logo2.png" alt="first logo">
+        <img class="logo " src="img/logo.png" alt="second logo">
+        <img class="logo " src="img/logo3.png" alt="third logo">
     </footer>
     <!-- js scripts
-            <script type="text/javascript" src="js/code.js"></script>
-            <script src="js/custom.js"></script>
+            <script type="text/javascript " src="js/code.js "></script>
+            <script src="js/custom.js "></script>
 -->
 </body>
 
