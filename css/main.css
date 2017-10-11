@@ -1,6 +1,18 @@
 /*==========================================
     OVERALL
     =====================================================*/
+@font-face {
+font-family: 'TitilliumText22L-Light';
+font-style: normal;
+font-weight: normal;
+src: local('TitilliumText22L-Light'), url('../fonts/TitilliumText22L002.woff') format('woff');
+}
+@font-face {
+font-family: 'TitilliumText22L-Medium';
+font-style: normal;
+font-weight: normal;
+src: local('TitilliumText22L-Medium'), url('../fonts/TitilliumText22L004.woff') format('woff');
+}
 
 html {
     font-size: 62.5%;
@@ -17,14 +29,14 @@ body {
 }
 
 .page__main {
-    max-width: 1050px;
+    max-width: 920px;
     margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items:flex-start;
+    align-content:center;
 }
 
 
@@ -61,19 +73,23 @@ body {
     =====================================================*/
 
 .form__wrapper {
+
     display: flex;
     flex-direction: column;
     width: 380px;
-    margin: 0px;
+    margin: 20px;
 }
-
+.form__wrapper--up{
+    margin-top:-40px;
+}
 .form__content {
     width: 100%;
     position: relative;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 3px;
-    box-sizing: border-box
+    box-sizing: border-box;
+
 }
 
 .form__content::before {
@@ -92,7 +108,7 @@ body {
 .form__header {
     font-size: 3.2rem;
     text-transform: capitalize;
-    font-family: 'TitilliumTextMedium';
+    font-family:'TitilliumText22L-Medium';
     font-weight: lighter;
     text-align: center;
     margin-top: 24px;
@@ -100,7 +116,6 @@ body {
     text-shadow: 2px 1px 2px #2b0100;
 }
 
-.form__content {}
 
 .form__elem {
     font-size: 1.6rem;
@@ -115,6 +130,9 @@ body {
     border: 1px solid #c6c6c6;
     border-radius: 3px;
     width: 100%;
+    color:#afafaf;
+    justify-content: flex-start;
+    cursor:pointer;
 }
 
 .elem__icon {
@@ -153,9 +171,9 @@ body {
 }
 
 .elem__input {
-    font-family: 'TitilliumTextLight';
     width: 100%;
     border: none;
+    font-family:'TitilliumText22L-Light';
     padding-left: 25px;
     background: rgb(248, 248, 248);
     background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(243, 243, 243, 1) 100%);
@@ -178,24 +196,60 @@ body {
 }
 
 .elem__input--select > option {
-    color: black;
-    background: red;
-    background: linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(243, 243, 243, 1) 100%);
+     color: #afafaf;
 }
+.elem__label--checkbox{
+align-items: center;
+border:none;
+}
+.elem__checkbox{
+	display:none;
+}
+.checkbox__icon{
+    position:relative;
+    order:-1;
+	width:20px;
+	height:20px;
+    box-sizing:border-box;
+	background: transparent;
+	border-radius:3px;
+    border: 1px solid #c8c8c8;
+    margin:5px 15px 5px 0px;
+    
+}
+.checkbox__icon:after{
+position:absolute;
+content:'';
+    width:10px;
+    height:10px;
+    box-shadow:-1px -1px 0px 0px rgba(#c6e587, 0.41);
+    top:50%;
+    left:50%;
+    border-radius:3px;
+    transform:translate(-50%, -50%);
 
+}
+.elem__checkbox:checked ~.checkbox__icon:after{
+    background: #b1db57;
+    background: linear-gradient(to bottom, #b1db57 0%, #72ba0e 100%);
+}
 .elem__btn {
-    text-transform: capitalize;
     color: white;
     height: 46px;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size:2.3rem;
 }
 
 .elem__btn--confirm {
     text-shadow: 1px 1px 0px #2e6c02;
     border: 1px solid #3b9a00;
     background: rgb(163, 216, 64);
+    background: linear-gradient(to bottom, rgba(163,216,64,1) 0%, rgba(59,154,0,1) 100%);
 }
 
+.elem__btn--fullWidth{
+    width:100%;
+}
 
 
 
