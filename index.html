@@ -13,7 +13,7 @@
 
 <body>
     <header class="page__header">
-        <img class="header__logo--circle" src="img/logo2.png" alt="">
+        <img class="header__logo--circle" src="img/logo2.png" alt="okragle log z jaszczurka, firmy mascerlab">
         <img class="header__logo" src="img/logo.png" alt="">
     </header>
     <main class="page__main">
@@ -64,7 +64,7 @@
                     <p>
                         <label class="elem__label elem__label--checkbox ">
                             <span>Ihave read and accept the terms of use.</span>
-                            <input class="elem__checkbox " id="terms-of-use" type="checkbox">
+                            <input class="elem__checkbox" id="terms-of-use" type="checkbox">
                             <span class="checkbox__icon"></span>
                         </label>
                     </p>
@@ -96,9 +96,11 @@
                     </p>
                     <p>
                         <label class="elem__label elem__label--checkbox ">
-                            <span class="checkbox__icon"></span>Send copy to my Email
+                            <span>Send copy to my Email</span>
                             <input class="elem__checkbox" id="copy-email" type="checkbox" checked="checked">
+                            <span class="checkbox__icon"></span>
                         </label>
+
                     </p>
                     <p>
                         <button class="elem__btn elem__btn--confirm elem__btn--fullWidth">Send Email</button>
@@ -120,16 +122,17 @@
                     <p>
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='lock'></span>
-                            <input class="elem__input" type="text" placeholder="text">
+                            <input class="elem__input" type="text" placeholder="Password">
                         </label>
                     </p>
-                    <p>
+                    <p class="form__elem">
                         <label class="elem__label elem__label--checkbox ">
-                            <span class="checkbox__icon"></span><span></span>Remember me
+                            <span>Remember me</span>
                             <input class="elem__checkbox" id="remember" type="checkbox">
+                            <span class="checkbox__icon"></span>
                         </label>
-                    </p>
                     <button class="elem__btn elem__btn--confirm">Sign in</button>
+                    </p>
                 </form>
             </div>
             <!-- RECOVER FORM -->
@@ -148,37 +151,37 @@
                             <input class="elem__input" type="tel" placeholder="enter your Phone number">
                         </label>
                     </p>
-                    <p>
-                        <button class="elem__btn elem__btn--confirm ">send</button>
-                        <button class="elem__btn elem__btn--confirm " disabled>done</button>
+                    <p class="form__elem">
+                        <button class="elem__btn elem__btn--confirm ">Send</button>
+                        <button class="elem__btn elem__btn--confirm elem__btn--disabled" disabled>Done</button>
                     </p>
                 </form>
             </div>
             <!-- SUBSCRIBE FORM -->
-            <div class="form__wrapper ">
+            <div class="form__wrapper">
                 <h2 class="form__header ">subscribe form</h2>
                 <form class="form__content " action="# ">
-                    <p>
+                    <p class="form__elem">
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='message'></span>
                             <input class="elem__input" type="email" placeholder="Enter yout Email">
                         </label>
                     </p>
-                    <button class="elem__btn elem__btn--confirm">subscribe</button>
-                    <button class="elem__btn elem__btn--negative">no, thanks</button>
+                    <p class="form__elem">
+                    <button class="elem__btn elem__btn--confirm">Subscribe</button>
+                    <button class="elem__btn elem__btn--negative">No, thanks</button>
+                    </p>
                 </form>
             </div>
+    <footer class="form__wrapper page__footer">
+        <img class="footer__logo--circle" src="img/logo2.png" alt="first logo">
+        <img class="footer__logo" src="img/logo.png" alt="second logo">
+        <img class="footer__logo footer__logo--allWidth" src="img/logo3.png" alt="third logo">
+    </footer>
         </div>
     </main>
-    <footer class="page__footer">
-        <img class=" " src="img/logo2.png" alt="first logo">
-        <img class="logo " src="img/logo.png" alt="second logo">
-        <img class="logo " src="img/logo3.png" alt="third logo">
-    </footer>
-    <!-- js scripts
-            <script type="text/javascript " src="js/code.js "></script>
-            <script src="js/custom.js "></script>
--->
+<script src="/js/es6.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 
 </html>
