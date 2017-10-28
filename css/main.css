@@ -276,14 +276,15 @@ body {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
-    width: 20px;
-    height: 20px;
+    width: 22   px;
+    height: 21px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: transparent;
     border-radius: 3px;
     border: 1px solid #c8c8c8;              
     background-color:transparent;
+
 }
 .elem__label--checkbox {
     -webkit-box-align: center;
@@ -294,6 +295,7 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
+
 .checkbox__icon {
     position: relative;
     -webkit-box-ordinal-group: 0;
@@ -301,13 +303,13 @@ body {
     order: -1;
     width: 20px;
     height: 20px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    /*flex-shrink: 0;*/
     background: transparent;
     border-radius: 3px;
     border: 1px solid #c8c8c8;
     margin: 5px 15px 5px 0px;
     background-color: #f4f4f4;
+
 }
 
 .checkbox__icon:after {
@@ -403,11 +405,14 @@ body {
 
 @media (max-width: 860px) {
 .page__main {
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 
 }
 .page__header {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
 }
 .form__wrapper{
