@@ -424,3 +424,44 @@ body {
      width:90%;
 }
 }
+
+/* ANIMATION */
+.anim{
+    overflow: hidden;
+    position:relative;
+    z-index:0;
+
+}
+.anim span{
+    z-index:77 !important;
+}
+
+.anim:before,
+.anim:after {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: green;
+    transition:0.5s;
+  }
+  .anim:before{
+    transform: translateY(-90%);
+    z-index:1;
+  }
+  .anim:after{
+    transform: translateY(50%);
+    z-index:1;
+  }
+  .anim:hover{
+    color:red;
+    background-color:transparent;
+  }
+  .anim:hover.anim:after{
+     transform: translateY(50%);
+  }
+    .anim:hover.anim:before{
+     transform: translateY(-50%);
+  }
