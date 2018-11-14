@@ -13,44 +13,44 @@
 
 <body>
     <header class="page__header">
-        <img class="header__logo--circle" src="img/logo2.png" alt="okragle log z jaszczurka, firmy mascerlab">
-        <img class="header__logo" src="img/logo.png" alt="">
+        <img class="header__logo--circle" src="img/logo2.png" alt="okragle logo with lizard, company mascerlab">
+        <img class="header__logo" src="img/logo.png" alt="logo company mascerlab">
     </header>
     <main class="page__main">
         <div class="page__column">
             <!-- REGRISTER FORM -->
-            <div class="form__wrapper">
+            <section class="form__wrapper">
                 <h2 class="form__header">register form</h2>
-                <form class="form__content">
+                <form class="form__content" id="register" >
                     <p class="form__elem">
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='user'></span>
-                            <input class="elem__input" type="text" placeholder="Username">
+                            <input class="elem__input" type="text" placeholder="Username"  required>
                         </label>
                     </p>
                     <p class="form__elem">
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='lock'></span>
-                            <input class="elem__input" type="text" placeholder="Password">
+                            <input class="elem__input" type="password" placeholder="Password" required>
                         </label>
                     </p>
                     <p>
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='lock'></span>
-                            <input class="elem__input" type="text" placeholder="Confirm Password">
+                            <input class="elem__input" type="password" placeholder="Confirm Password" required>
                         </label>
                     </p>
                     <p>
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='message'></span>
-                            <input class="elem__input" type="email" placeholder="Email">
+                            <input class="elem__input" type="email" placeholder="Email" required>
                         </label>
                     </p>
                     <p>
                         <label class="elem__label">
                             <span class="elem__icon" data-bg='maps'></span>
-                            <select class="elem__input elem__input--select" name="Location">
-                                <option value="default" disabled selected hidden>Your Location</option>
+                            <select class="elem__input elem__input--select" name="Location" required>
+                                <option value="" disabled selected hidden>Your Location</option>
                                 <option value="Africa ">Africa</option>
                                 <option value="Europe ">Europe</option>
                                 <option value="Asia ">Asia</option>
@@ -64,7 +64,7 @@
                     <p>
                         <label class="elem__label elem__label--checkbox ">
                             <span>Ihave read and accept the terms of use.</span>
-                            <input class="elem__checkbox" id="terms-of-use" type="checkbox">
+                            <input class="elem__checkbox" id="terms-of-use" type="checkbox" required>
                             <span class="checkbox__icon"></span>
                         </label>
                     </p>
@@ -72,11 +72,11 @@
                         <button class="elem__btn elem__btn--confirm elem__btn--fullWidth" type="submit"><span>Sign up</span></button>
                     </p>
                 </form>
-            </div>
+            </section>
             <!-- SEND EMAIL -->
-            <div class="form__wrapper ">
+            <div class="form__wrapper">
                 <h2 class="form__header ">send email</h2>
-                <form class="form__content " action="#">
+                <form class="form__content " >
                     <p>
                         <label class="elem__label ">
                             <span class="elem__icon " data-bg='user'></span>
@@ -180,7 +180,7 @@
     </footer>
         </div>
     </main>
-<script src="/js/es6.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/es6.js" type="text/javascript" ></script>
 
 </body>
 
