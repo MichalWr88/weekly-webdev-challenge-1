@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>weekly webdev challenge-1</title>
+    <meta charset="utf-8">
+    <!-- RWD-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="page__header">
+        <img class="header__logo--circle" src="img/logo2.png" alt="okragle logo with lizard, company mascerlab">
+        <img class="header__logo" src="img/logo.png" alt="logo company mascerlab">
+    </header>
+    <main class="page__main">
+        <div class="page__column">
+            <!-- REGRISTER FORM -->
+            <section class="form__wrapper">
+                <h2 class="form__header">register form</h2>
+                <form class="form__content" id="register" >
+                    <p class="form__elem">
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='user'></span>
+                            <input class="elem__input" type="text" placeholder="Username"  required>
+                        </label>
+                    </p>
+                    <p class="form__elem">
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="password" placeholder="Password" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="password" placeholder="Confirm Password" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Email" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='maps'></span>
+                            <select class="elem__input elem__input--select" name="Location" required>
+                                <option value="" disabled selected hidden>Your Location</option>
+                                <option value="Africa ">Africa</option>
+                                <option value="Europe ">Europe</option>
+                                <option value="Asia ">Asia</option>
+                                <option value="North America ">North America</option>
+                                <option value="South America ">South America</option>
+                                <option value="Antarctica ">Antarctica</option>
+                                <option value="Australia ">Australia</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label elem__label--checkbox ">
+                            <span>Ihave read and accept the terms of use.</span>
+                            <input class="elem__checkbox" id="terms-of-use" type="checkbox" required>
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <button class="elem__btn elem__btn--confirm elem__btn--fullWidth" type="submit"><span>Sign up</span></button>
+                    </p>
+                </form>
+            </section>
+            <!-- SEND EMAIL -->
+            <div class="form__wrapper">
+                <h2 class="form__header ">send email</h2>
+                <form class="form__content " >
+                    <p>
+                        <label class="elem__label ">
+                            <span class="elem__icon " data-bg='user'></span>
+                            <input class="elem__input" type="text" placeholder="Your Name">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Your Email">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <textarea class="elem__input elem__input--textarea" name="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label elem__label--checkbox ">
+                            <span>Send copy to my Email</span>
+                            <input class="elem__checkbox" id="copy-email" type="checkbox" checked="checked">
+                            <span class="checkbox__icon"></span>
+                        </label>
+
+                    </p>
+                    <p>
+                        <button class="elem__btn elem__btn--confirm elem__btn--fullWidth">Send Email</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <div class="page__column">
+            <!-- SIGN INFORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header ">sign in form</h2>
+                <form class="form__content" action="# ">
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='user'></span>
+                            <input class="elem__input" type="text" placeholder="Username">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='lock'></span>
+                            <input class="elem__input" type="text" placeholder="Password">
+                        </label>
+                    </p>
+                    <p class="form__elem">
+                        <label class="elem__label elem__label--checkbox ">
+                            <span>Remember me</span>
+                            <input class="elem__checkbox" id="remember" type="checkbox">
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    <button class="elem__btn elem__btn--confirm">Sign in</button>
+                    </p>
+                </form>
+            </div>
+            <!-- RECOVER FORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header">recover form</h2>
+                <form class="form__content" action="#">
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Enter your Email">
+                        </label>
+                    </p>
+                    <p>
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='phone'></span>
+                            <input class="elem__input" type="tel" placeholder="enter your Phone number">
+                        </label>
+                    </p>
+                    <p class="form__elem">
+                        <button class="elem__btn elem__btn--confirm ">Send</button>
+                        <button class="elem__btn elem__btn--confirm elem__btn--disabled" disabled>Done</button>
+                    </p>
+                </form>
+            </div>
+            <!-- SUBSCRIBE FORM -->
+            <div class="form__wrapper">
+                <h2 class="form__header ">subscribe form</h2>
+                <form class="form__content " action="# ">
+                    <p class="form__elem">
+                        <label class="elem__label">
+                            <span class="elem__icon" data-bg='message'></span>
+                            <input class="elem__input" type="email" placeholder="Enter yout Email">
+                        </label>
+                    </p>
+                    <p class="form__elem">
+                    <button class="elem__btn elem__btn--confirm">Subscribe</button>
+                    <button class="elem__btn elem__btn--negative">No, thanks</button>
+                    </p>
+                </form>
+            </div>
+    <footer class="form__wrapper page__footer">
+        <img class="footer__logo--circle" src="img/logo2.png" alt="first logo">
+        <img class="footer__logo" src="img/logo.png" alt="second logo">
+        <img class="footer__logo footer__logo--allWidth" src="img/logo3.png" alt="third logo">
+    </footer>
+        </div>
+    </main>
+<script src="./js/es6.js" type="text/javascript" ></script>
+
+</body>
+
+</html>
